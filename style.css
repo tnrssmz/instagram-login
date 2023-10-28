@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainpic {
+    position: relative;
+}
+
+.pic {
+    width: 375px;
+}
+
+.change {
+    position: absolute;
+    width: 250px;
+    height: 535px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 25px;
+    top: 24px;
+    left: 108px;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    0% {
+        background-image: url(./slayt1.png);
+        top: 24;
+        left: 108;
+    }
+
+    25% {
+        background-image: url(./slayt2.png);
+        top: 24;
+        left: 108;
+    }
+
+    50% {
+        background-image: url(./slayt3.png);
+        top: 24;
+        left: 108;
+    }
+
+    75% {
+        background-image: url(./slayt4.png);
+        top: 24;
+        left: 108;
+    }
+
+}
+
+
+.content {
+    width: 350px;
+}
+
+.brdr {
+    border: 1px solid lightgray;
+}
+
+.npt {
+    width: 268px;
+    height: 38px;
+    background-color: #fafafa;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    outline: none;
+    border-radius: 3px;
+}
+
+.npt:focus {
+    outline: 1px solid gray;
+}
+
+.btn {
+    width: 268px;
+    height: 32px;
+    background-color: #4cb5f9;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #4cb5f9;
+}
+
+.g-play {
+    width: 134px;
+    height: 40px;
+}
+
+.micro {
+    width: 111px;
+    height: 40px;
+}
+
+.ciz {
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+.face {
+    color: rgb(56, 81, 133);
+    font-size: 14px;
+}
+
+.fb {
+    font-size: 18px;
+}
+
+.forget {
+    color: rgb(50, 94, 136);
+    font-size: 12px;
+}
+
+.s-up {
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.sign-up {
+    color: #4cb5f9;
+}
+
+.download {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+footer .footerlink .footlink a {
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    margin: 4px;
+    color: rgb(110, 110, 110);
+}
+
+footer .footerlink .footlink a:hover {
+    text-decoration: underline;
+}
+
+footer .footerlink .footend {
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(104, 104, 104);
+}
+
+@media (max-width:991px) {
+    footer {
+        margin-top: 25px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width:875px) {
+    .mainpic {
+        display: none;
+    }
+}
+
+@media (max-width:450px) {
+    .brdr {
+        border: none;
+    }
+}
